@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue Form Component</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form @submit.prevent="submitForm">
+            <input v-model="username" type="text" placeholder="Введите имя">
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <script type="module">
+        const { createApp, ref } = Vue;
+        
+        createApp({
+            setup() {
+                const username = ref('');
+                
+                const submitForm = () => {
+                    alert(username.value);
+                };
+                
+                return {
+                    username,
+                    submitForm
+                };
+            }
+        }).mount('#app');
+    </script>
+</body>
+</html>

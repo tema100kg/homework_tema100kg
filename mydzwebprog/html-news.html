@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новость</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .news-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .news-title {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .news-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .author {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .news-content {
+            font-size: 16px;
+            color: #34495e;
+        }
+
+        .news-text {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
+        @media (max-width: 600px) {
+            .news-container {
+                padding: 20px;
+            }
+            
+            .news-title {
+                font-size: 24px;
+            }
+            
+            .news-meta {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <h1 class="news-title">Ученые совершили прорыв в области искусственного интеллекта</h1>
+        
+        <div class="news-meta">
+            <span class="author">Автор: Шляков Артём Михайлович</span>
+            <span class="date">Дата публикации: 6 октября 2025 года</span>
+        </div>
+        
+        <div class="news-content">
+            <p class="news-text">Исследователи из ведущего технологического университета объявили о значительном прорыве в разработке систем искусственного интеллекта. Новая архитектура нейронных сетей демонстрирует беспрецедентные результаты в обработке естественного языка и компьютерном зрении.</p>
+            
+            <p class="news-text">Разработанная технология позволяет машинам не только понимать сложные контекстные связи, но и проявлять элементы творческого мышления. В ходе тестирования система успешно прошла серию сложных когнитивных тестов, показав результаты, сопоставимые с человеческими.</p>
+            
+            <p class="news-text">"Этот прорыв открывает новые горизонты для применения <span class="highlight">ИИ в медицине</span>, образовании и научных исследованиях", - заявил руководитель проекта доктор технических наук.</p>
+            
+            <p class="news-text">Ожидается, что коммерческое внедрение технологии начнется уже в следующем году. Компании-партнеры уже выразили заинтересованность в использовании новой разработки для создания инновационных продуктов и сервисов.</p>
+        </div>
+    </div>
+</body>
+</html>

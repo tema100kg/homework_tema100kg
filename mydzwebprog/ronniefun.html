@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeah buddy_Light weight...</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .image-container {
+            width: 100%;
+            max-width: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 80vh;
+            object-fit: contain;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 3px solid white;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+            }
+            
+            img {
+                max-height: 70vh;
+                border-radius: 10px;
+                border: 2px solid white;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+                background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            }
+            
+            img {
+                max-height: 65vh;
+                border-radius: 8px;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .image-container {
+                max-width: 500px;
+            }
+        }
+        
+        @media (min-width: 1200px) {
+            .image-container {
+                max-width: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="https://www.meme-arsenal.com/memes/42a95cf2917581ebde340ab75af57a4e.jpg" alt="Мем картинка">
+    </div>
+</body>
+</html>
